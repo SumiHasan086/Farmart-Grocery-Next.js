@@ -13,13 +13,13 @@ const Header = () => {
           {/* Logo */}
           <Link href="/">
             <a href="/" className="text-4xl text-primary">
-              {/* <Image
-                src="/logo.svg"
+              <Image
+                src="/images/logo.png"
                 width="160"
                 height="55"
                 objectFit="contain"
-              /> */}
-              <h1>Farmart</h1>
+              />
+              
             </a>
           </Link>
           {/* Search */}

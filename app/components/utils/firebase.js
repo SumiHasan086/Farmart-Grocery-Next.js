@@ -1,9 +1,9 @@
 import React from 'react'
 
-const firebase = () => {
+const Firebase = () => {
   return (
-    <div>firebase</div>
+    <div>Firebase</div>
   )
 }
 
-export default firebase
+export default Firebase
