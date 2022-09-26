@@ -2,14 +2,16 @@ import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
 
-const Layout = ({childern}) => {
-  return (
-    <>
-        <Header/>
-          {childern}
-        <Footer />
-    </>
-  )
+const Layout = ({ children }) => {
+    return (
+        <>
+            <Header />
+            <main>
+                {children}
+            </main>
+            <Footer />
+        </>
+    )
 }
 
 export default Layout

@@ -1,9 +1,3 @@
-import React from 'react'
 
-const Helper = () => {
-  return (
-    <div>helper</div>
-  )
-}
-
-export default Helper
+export const useBackgroundImage=(url,style)=>({backgroundImage:`url(${url})`,backgroundPosition:'center',
+backgroundSize:'cover',backgroundRepeat:'no-repeat',...style})

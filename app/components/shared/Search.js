@@ -7,7 +7,7 @@ const Search = () => {
             <div className="bg-gray-100 p-4 rounded-lg md:flex  items-center gap-2 lg:min-w-[650px] mx-4 hidden">
 
                 <select name="product_cat" className="outline-none bg-transparent">
-                    <option value="0" selected="selected">All Categories</option>
+                    <option value="0" defaultValue>All Categories</option>
                     <option className="level-0" value="breads-sweets">Breads Sweets</option>
                     <option className="level-1" value="chocolate">&nbsp;&nbsp;&nbsp;Chocolate</option>
                     <option className="level-1" value="cupcakes">&nbsp;&nbsp;&nbsp;Cupcakes</option>
