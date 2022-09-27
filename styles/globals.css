@@ -37,13 +37,29 @@ h1,h2,h3,h4,h5,h6{
 .btn-white{
   @apply bg-white text-title font-bold px-7 py-3 block w-fit rounded hover:shadow-lg transition-all duration-500
 }
-
+/* card-shadow */
+.card-shadow{
+  box-shadow:0 30px 40px 0 rgb(131 132 135 /15%);
+  -webkit-box-shadow:0 30px 40px 0 rgb(131 132 135 /15%);
 }
 
+/* Hide scrollbar */
+/* Chrome Safari and Opera */
+.no-scrollbar::-webkit-scrollbar{
+ display: none;
+}
 
+.no-scrollbar{
+ -ms-overflow-style: none;/*Internet Explorer and Edge*/
+ scrollbar-width:none;/*Firefox*/
+}
 
-
-
+/* products */
+/* products card */
+.product-card{
+ @apply !max-w-[275px] flex flex-col items-start cursor-pointer p-5 rounded-md hover:card-shadow transition-all duration-500 relative border border-gray-100 hover:border-gray-200
+}
+}
 
 
 

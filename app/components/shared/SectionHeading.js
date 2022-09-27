@@ -6,7 +6,7 @@ const SectionHeading = ({ title, moreText, moreUrl = "/", categories, noButton }
         <div className="flex items-center justify-between">
             {/* Section title */}
             <div className="flex items-center gap-10">
-                <h1 className="section-title">{title}</h1>
+                <h1 className="section-title text-2xl font-bold">{title}</h1>
                 {/* Categories */}
                 {categories ? (
                     <div className="hidden md:flex items-center gap-5">

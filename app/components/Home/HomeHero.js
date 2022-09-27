@@ -1,5 +1,5 @@
 import React from 'react'
-import { useBackgroundImage } from '../utils/helper'
+import { useBackgroundImage } from '../../utils/helper'
 
 const HomeHero = () => {
 
