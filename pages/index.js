@@ -5,6 +5,7 @@ import HomeCategory from '../app/components/Home/HomeCategory'
 import HomeHero from '../app/components/Home/HomeHero'
 import HomePosters from '../app/components/Home/HomePosters'
 import TodaysDeals from '../app/components/Home/TodaysDeals'
+import ProductDetails from '../app/components/Product/ProductDetails'
 
 export default function Home (){
   return(
@@ -14,6 +15,7 @@ export default function Home (){
       <FeaturedBrands />
       <TodaysDeals />
       <HomePosters />
+      <ProductDetails />
     </>
   )
 }
