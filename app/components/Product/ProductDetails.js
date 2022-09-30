@@ -1,5 +1,6 @@
 import React from 'react'
 import FooterCard from '../shared/FooterCard'
+import Quantity from '../shared/Quantity'
 
 const ProductDetails = ({ price = 25, oldPrice = 30.25 }) => {
     return (
@@ -8,7 +9,7 @@ const ProductDetails = ({ price = 25, oldPrice = 30.25 }) => {
                 <div className=" p-10 bg-white rounded-2xl ">
                     <div className="flex flex-wrap lg:flex-row flex-col lg:gap-0 gap-7">
                         <div className="lg:w-2/5 w-full lg:border-r">
-                            <img src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2020/02/02_3a.jpg?fit=640%2C640&ssl=1" alt="" loading="lazy" />
+                            <img src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2020/02/05_11a.jpg?fit=800%2C800&ssl=1" />
                         </div>
                         <div className="lg:w-2/5 w-full lg:px-10 pl-0">
                             <div className="text-grayColor mb-5">
@@ -41,11 +42,7 @@ const ProductDetails = ({ price = 25, oldPrice = 30.25 }) => {
                             <div className="my-5">
                                 <span className="text-sm text-grayColor pb-2 block">Quantity : </span>
                                 <div className="flex  gap-5">
-                                    <div className="flex border">
-                                        <button className="w-10 h-10 bg-[#f5f5f5] flex items-center justify-center ">+</button>
-                                        <div className="w-10 h-10  flex items-center justify-center">1</div>
-                                        <button className="w-10 h-10 bg-[#f5f5f5] flex items-center justify-center ">-</button>
-                                    </div>
+                                    <Quantity />
                                     <button className="bg-primary text-white px-5 py-2 rounded-md">Add to cart</button>
                                 </div>
                             </div>

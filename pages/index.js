@@ -6,6 +6,7 @@ import HomeHero from '../app/components/Home/HomeHero'
 import HomePosters from '../app/components/Home/HomePosters'
 import TodaysDeals from '../app/components/Home/TodaysDeals'
 import ProductDetails from '../app/components/Product/ProductDetails'
+import ProductMoreInfo from '../app/components/Product/ProductMoreInfo'
 
 export default function Home (){
   return(
@@ -16,6 +17,7 @@ export default function Home (){
       <TodaysDeals />
       <HomePosters />
       <ProductDetails />
+      <ProductMoreInfo/>
     </>
   )
 }
