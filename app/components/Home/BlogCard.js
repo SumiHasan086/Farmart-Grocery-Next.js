@@ -14,7 +14,7 @@ const BlogCard = ({ image, category, description, title }) => {
             <div className="">
                 <div className="text-grayColor">
                     By <a href="/" className="text-title underline font-bold mr-1">sumihasan</a>
-                    in <span className="text-green font-bold mr-1">{category}</span>
+                    in <span className="text-green-500 font-bold mr-1">{category}</span>
                     on 30th Sep 2022
                 </div>
             </div>

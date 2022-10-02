@@ -1,4 +1,5 @@
 import React from 'react'
+import Breadcrumb from '../shared/Breadcrumb'
 import FooterCard from '../shared/FooterCard'
 import Quantity from '../shared/Quantity'
 
@@ -12,16 +13,8 @@ const ProductDetails = ({ price = 25, oldPrice = 30.25 }) => {
                             <img src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2020/02/05_11a.jpg?fit=800%2C800&ssl=1" />
                         </div>
                         <div className="lg:w-2/5 w-full lg:px-10 pl-0">
-                            <div className="text-grayColor mb-5">
-                                <a href="/">Home</a>
-                                <span className="mx-2">/</span>
-                                <a href="/">Shop</a>
-                                <span className="mx-2">/</span>
-                                <a href="/">Fruits</a>
-                                <span className="mx-2">/</span>
-                                <span className="text-title">Bar S - Classic Bun Length Franks</span>
-                            </div>
-                            <h4 className="md:text-3xl text-base  font-bold mb-2 text-primary ">MartFury</h4>
+                            <Breadcrumb />
+                            <h4 className="md:text-3xl text-base  font-bold mb-2 mt-5 text-primary ">MartFury</h4>
                             <h1 className="text-title md:text-3xl text-xl font-semibold mb-5">Bar S - Classic Bun Length Franks</h1>
                             <span className="text-grayColor text-xs">⭐⭐⭐⭐⭐(1 customer review )</span>
 
