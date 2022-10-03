@@ -27,7 +27,7 @@ const CartAction = () => {
                         <h2 className="text-xl font-bold">Subtotal</h2>
                         <h2 className="text-xl font-bold">$0.00</h2>
                     </div>
-                    <div className="pb-5 border-b">
+                    <div className="pb-5 border-b space-y-3">
                         <span className="">Shipping</span>
                         <ul>
                             <li>-Flat rate</li>
