@@ -1,7 +1,9 @@
 import React from 'react'
-import Button from '../shared/Button';
+import { FormBtn } from '../shared/Form';
 
-const YourOrder = () => {
+const YourOrder = ({placeOrder}) => {
+
+
     return (
         <div>
             <h3 className="text-2xl mb-4">Your Order</h3>
@@ -44,9 +46,9 @@ const YourOrder = () => {
                     <p className="text-gray-500 mt-3"> - Pay with a Debit/Credit Card</p>
                 </div>
             </div>
-            <Button 
+            <FormBtn 
             title="Place Order"
-            className="w-full py-3 mt-5"
+            onClick={placeOrder}
             />
         </div>
     )

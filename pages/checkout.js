@@ -1,6 +1,5 @@
 import React from 'react'
-import BillingInfo from '../app/components/Checkout/BillingInfo'
-import YourOrder from '../app/components/Checkout/YourOrder'
+import CheckoutContent from '../app/components/Checkout/CheckoutContent'
 import Breadcrumb from '../app/components/shared/Breadcrumb'
 
 const Checkout = () => {
@@ -15,14 +14,7 @@ const Checkout = () => {
       <div className="p-5">
         <div className=" mx-auto max-w-5xl mt-10">
            <h1 className="text-4xl text-title text-center font-bold mb-10">Checkout</h1>
-           <div className="flex flex-wrap md:flex-nowrap gap-5">
-                <div className="w-full md:w-[60%]">
-                  <BillingInfo />
-                </div>
-                <div className="w-full md:w-[40%]">
-                 <YourOrder />
-                </div>
-           </div>
+           <CheckoutContent />
         </div>
       </div>
     </main>
