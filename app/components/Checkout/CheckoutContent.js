@@ -5,9 +5,6 @@ import YourOrder from './YourOrder'
 import * as Yup from "yup";
 
 
-
-
-
 const validationSchema = Yup.object().shape({
     first_name: Yup.string().max(25).required().label("First name"),
     last_name: Yup.string().max(25).required().label("Last name"),
