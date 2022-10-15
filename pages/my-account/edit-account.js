@@ -1,8 +1,11 @@
 import React from 'react'
+import DashboardLayout from '../../app/layout/DashboardLayout'
 
 const EditAccount = () => {
   return (
-    <div>EditAccount</div>
+    <DashboardLayout>
+    EditAccount
+   </DashboardLayout >
   )
 }
 
