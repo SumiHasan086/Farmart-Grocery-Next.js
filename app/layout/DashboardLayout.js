@@ -1,10 +1,13 @@
 import React from 'react'
 import Auth from '../components/auth'
 import DashBoardWrapper from '../components/dashboard/DashBoardWrapper'
-import Breadcrumb from '../components/shared/Breadcrumb'
+import Breadcrumb from '../components/shared/Breadcrumb';
+import {useSelector} from 'react-redux'
+import { selectUser } from '../redux/slices/authSlice';
 
 const DashboardLayout = ({children}) => {
-    const user={}
+    const user=useSelector(selectUser);
+
     return (
         <main>
           {/* Breadcumb */}

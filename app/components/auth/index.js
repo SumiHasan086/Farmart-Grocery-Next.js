@@ -1,5 +1,7 @@
 import React from 'react'
+import firebase from 'firebase';
 import * as Yup from "yup";
+import { auth } from '../../utils/firebase';
 import { AppForm, FormInput, FormBtn } from '../shared/Form'
 
 
@@ -15,9 +17,28 @@ const Auth = () => {
     const [isLogin, setIsLogin] =React.useState(true);
 
     const HandleLoginSignup = (values) => {
-        console.log(values);
+        if(isLogin)login(values.email , values.password)
+        else signUp(values.email , values.password)
 
     }
+
+
+
+    const loginWithGoogle = () =>{
+      const provider = new firebase.auth.GoogleAuthProvider();
+        auth.signInWithPopup(provider)
+    }
+
+    const signUp=(email,password) =>{
+        auth.createUserWithEmailAndPassword(email,password)
+        .catch(err =>alert(err.message))
+    }
+
+    const login=(email,password) =>{
+        auth.signInWithEmailAndPassword(email,password)
+        .catch(err =>alert(err.message))
+    }
+
 
     return (
         <div className="p-5">
@@ -56,7 +77,7 @@ const Auth = () => {
                     <p className="text-center mb-5 text-blue-700 font-semibold text-xl cursor-pointer">Log in with</p>
 
                     <div className="flex items-center gap-5">
-                        <button className="btn-white bg-green-300 text-white">Google</button>
+                        <button  onClick={loginWithGoogle} className="btn-white bg-green-300 text-white">Google</button>
                         <button className="btn-white bg-blue-300 text-white">Facebook</button>
 
                     </div>
