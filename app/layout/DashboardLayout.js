@@ -20,7 +20,7 @@ const DashboardLayout = ({children}) => {
           {user?(
             <DashBoardWrapper>
             {children}
-          </DashBoardWrapper>
+           </DashBoardWrapper>
           ):(
             <Auth />
           )}

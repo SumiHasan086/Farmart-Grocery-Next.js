@@ -1,10 +1,11 @@
 import React from 'react'
 import CheckoutContent from '../app/components/Checkout/CheckoutContent'
 import Breadcrumb from '../app/components/shared/Breadcrumb'
+import SecureLayout from '../app/layout/SecureLayout'
 
 const Checkout = () => {
   return (
-    <main>
+    <SecureLayout>
       {/* Breadcumb */}
       <div className="py-5 bg-[#f5f5f5]">
         <div className=" mx-auto max-w-5xl">
@@ -17,7 +18,7 @@ const Checkout = () => {
            <CheckoutContent />
         </div>
       </div>
-    </main>
+    </SecureLayout>
   )
 }
 

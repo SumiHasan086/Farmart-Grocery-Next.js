@@ -1,7 +1,7 @@
 import React from 'react'
 import firebase from 'firebase';
 import * as Yup from "yup";
-import { auth } from '../../utils/firebase';
+import { auth, db } from '../../utils/firebase';
 import { AppForm, FormInput, FormBtn } from '../shared/Form'
 
 
@@ -27,16 +27,37 @@ const Auth = () => {
     const loginWithGoogle = () =>{
       const provider = new firebase.auth.GoogleAuthProvider();
         auth.signInWithPopup(provider)
+        .then((userCredential) =>{
+            addUserToDatabase(userCredential.user);
+        })
     }
 
     const signUp=(email,password) =>{
         auth.createUserWithEmailAndPassword(email,password)
+        .then((userCredential) =>{
+            addUserToDatabase(userCredential.user);
+        })
         .catch(err =>alert(err.message))
-    }
+    };
 
     const login=(email,password) =>{
         auth.signInWithEmailAndPassword(email,password)
         .catch(err =>alert(err.message))
+    };
+
+    
+    const addUserToDatabase =async (user) => {
+        const {uid,displayName,email,photoURL} = user;
+        const userRef= await db.collection('users').doc(uid).get();
+        
+        if(!userRef.exists){
+            db.collection('users').doc(uid).set({
+                uid,
+                name: displayName,
+                email,
+                image: photoURL,
+            })
+        }
     }
 
 
