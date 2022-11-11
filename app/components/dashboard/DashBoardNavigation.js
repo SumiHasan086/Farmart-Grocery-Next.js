@@ -6,6 +6,7 @@ import { auth } from '../../utils/firebase'
 
 const DashBoardNavigation = () => {
   const router = useRouter()
+  
   return (
     <>
       <div className="bg-gray-100 p-4 rounded-md space-y-2 flex flex-col">
