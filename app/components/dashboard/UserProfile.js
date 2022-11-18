@@ -12,10 +12,10 @@ const UserProfile = () => {
         <div>
             <h1 className="text-3xl font-bold">User Profile</h1>
             {/* Name,image,email */}
-            <div className="flex items-center gap-4 mt-5">
+            <div className="flexitems-center  gap-4 mt-5">
                 <img src={user?.image} alt={user?.name} loading="lazy" />
                 <div>
-                    <h2 className="text-3xl font-semibold">{user?.name}</h2>
+                    <h2 className="text-3xl font-semibold mt-4">{user?.name}</h2>
                     <h3 className="text-lg font-semibold text-[#269018] mt-1">{user?.email}</h3>
                 </div>
             </div>
