@@ -11,7 +11,7 @@ const OrderTableRow = ({ name, order_id, items, total, payment_success, created_
         <>
             <tr className="border-b md:border-r md:border-l table_row">
                 <td className="py-5 pl-3">
-                    <Tooltip label={name}>
+                    <Tooltip label={order_id}>
                         <h3 className="truncate cursor-pointer w-20">{order_id}</h3>
                     </Tooltip>
 

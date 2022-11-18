@@ -69,8 +69,6 @@ const CheckoutContent = () => {
 
 
 
-
-
     return (
         <div>
             <div className="flex flex-wrap md:flex-nowrap gap-5">
